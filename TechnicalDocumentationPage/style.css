@@ -1,0 +1,100 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+#main-doc {
+  font-family: Helvetica;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 1.5rem;
+  background-color: rgb(168, 211, 228);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 15%;
+}
+
+#navbar-header {
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: black;
+}
+
+#section-div {
+  margin-left: 15%;
+  padding: 5rem 10rem 10rem;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.main-section {
+  margin-bottom: 10rem;
+}
+
+.main-section header {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.main-section p,
+.main-section li {
+  margin-bottom: 4rem;
+}
+
+pre {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  overflow: scroll;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+@media (max-width: 850px) {
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  #navbar-header {
+    font-size: 1rem;
+  }
+
+  #section-div {
+    margin: 0;
+    padding: 5rem 5rem 10rem;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+}
