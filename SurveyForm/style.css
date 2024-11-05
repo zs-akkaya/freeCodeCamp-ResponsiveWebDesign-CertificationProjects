@@ -1,0 +1,125 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 60%;
+  margin: 0 auto 30px;
+  max-width: 90rem;
+  min-width: 40rem;
+  font-family: Verdana;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 95, 121, 1) 50%,
+    rgba(160, 188, 194, 1) 100%
+  );
+}
+
+#content-div {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
+  padding: 0 30px 10px;
+  border-radius: 10px;
+}
+
+#heading {
+  display: block;
+  padding: 30px 0;
+  text-align: center;
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+#description {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+fieldset {
+  display: block;
+  margin-bottom: 10px;
+  border: none;
+  font-size: 1.3rem;
+}
+
+#personal-info label,
+#personal-info input,
+#personal-info select {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#personal-info label,
+fieldset:not(fieldset:first-of-type) legend {
+  margin-bottom: 3px;
+  font-style: italic;
+}
+
+#personal-info input {
+  margin-bottom: 10px;
+}
+
+#personal-info input,
+#personal-info select {
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  border-radius: 6px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+fieldset:not(fieldset:first-of-type) {
+  margin-top: 30px;
+  text-align: center;
+}
+
+fieldset:not(fieldset:first-of-type) label {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+#comments {
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  border-radius: 6px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  border-radius: 6px;
+  height: 20px;
+  background-color: white;
+  color: black;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}

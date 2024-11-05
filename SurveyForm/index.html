@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="content-div">
+      <heading id="heading">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to fill this survey
+        </p>
+      </heading>
+      <div>
+        <form action="" id="survey-form">
+          <fieldset id="personal-info">
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name here: "
+              required
+            />
+
+            <label for="email" id="email-label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email here: "
+              required
+            />
+
+            <label for="number" id="number-label">Age</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              min="13"
+              max="100"
+              placeholder="Enter your age here: "
+              required
+            />
+
+            <label for="dropdown">Gender</label>
+            <select name="dropdown" id="dropdown" required>
+              <option value="">(Choose your gender)</option>
+              <option value="f">Female</option>
+              <option value="m">Male</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Which one is your favorite?</legend>
+            <input
+              type="radio"
+              name="html-css-js"
+              value="html"
+              id="html"
+              checked
+            />
+            <label for="html">HTML</label>
+            <input type="radio" name="html-css-js" value="css" id="css" />
+            <label for="css">CSS</label>
+            <input type="radio" name="html-css-js" value="js" id="js" />
+            <label for="js">JavaScript</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Which of these frameworks are you familiar with?</legend>
+            <input
+              type="checkbox"
+              name="js-frameworks"
+              value="react"
+              id="react"
+            />
+            <label for="react">React.js</label>
+            <input
+              type="checkbox"
+              name="js-frameworks"
+              value="angular"
+              id="angular"
+            />
+            <label for="angular">Angular.js</label>
+            <input type="checkbox" name="js-frameworks" value="vue" id="vue" />
+            <label for="vue">Vue.js</label>
+            <br />
+            <input
+              type="checkbox"
+              name="js-frameworks"
+              value="node"
+              id="node"
+            />
+            <label for="node">Node.js</label>
+            <input
+              type="checkbox"
+              name="js-frameworks"
+              value="express"
+              id="express"
+            />
+            <label for="express">Express.js</label>
+            <input
+              type="checkbox"
+              name="js-frameworks"
+              value="meteor"
+              id="meteor"
+            />
+            <label for="meteor">Meteor.js</label>
+            <br />
+            <input
+              type="checkbox"
+              name="js-frameworks"
+              value="next"
+              id="next"
+            />
+            <label for="next">Next.js</label>
+            <input
+              type="checkbox"
+              name="js-frameworks"
+              value="ember"
+              id="ember"
+            />
+            <label for="ember">Ember.js</label>
+            <input
+              type="checkbox"
+              name="js-frameworks"
+              value="backbone"
+              id="backbone"
+            />
+            <label for="backbone">Backbone.js</label>
+            <input
+              type="checkbox"
+              name="js-frameworks"
+              value="svelte"
+              id="svelte"
+            />
+            <label for="svelte">Svelte.js</label>
+          </fieldset>
+
+          <fieldset>
+            <textarea name="comments" id="comments">
+                Write your additional comments here...</textarea
+            >
+          </fieldset>
+
+          <button id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
