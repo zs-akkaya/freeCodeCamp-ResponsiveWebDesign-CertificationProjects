@@ -1,0 +1,111 @@
+*,
+::before,
+::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: #00021f;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #00021f;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: ghostwhite;
+  font-size: 2rem;
+}
+
+#navbar a:hover {
+  color: rgba(248, 248, 255, 0.5);
+}
+
+#welcome-section {
+  height: 100vh;
+}
+
+#welcome-section div {
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  width: 100%;
+}
+
+#welcome-section h1,
+#welcome-section p {
+  color: ghostwhite;
+}
+
+#welcome-section h1 {
+  font-size: 5rem;
+}
+
+#welcome-section p {
+  font-size: 2rem;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 2rem;
+  padding: 8rem;
+  height: 100vh;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-tile img {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-tile p {
+  color: ghostwhite;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+#links {
+  padding: 0 0 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#links a {
+  margin: 0 1rem;
+}
+
+@media (max-width: 600px) {
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 1rem;
+  }
+
+  #links {
+    padding: 20rem 0 5rem;
+  }
+}
